@@ -1,0 +1,6 @@
+overflow: hidden;   
+overflow:hidden prevents scrollbars from showing up, even when they're necessary.
+
+
+
+// To change Curser :- cursor: url('assests/aim.png'),pointer;

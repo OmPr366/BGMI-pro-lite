@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(https://uhdwallpapers.xyz/media/images/800x/2020/09/03/pubg-new-2020-4k-wallpaper-9523071599105308.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: url('assests/aim.png'),pointer;
+}
+
+section:active{
+    cursor: url('assests/aim_red.png'),pointer;
+}
+
+.bullet{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url(assests/hole.png);
+    pointer-events: none;
+    transform: translate(30px, 30px);
+}
+
+.blood{
+    position: absolute;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    /* background: #f00; */
+    z-index: 1000;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    animation: fadeOut 4s linear infinite;
+}
+
+@keyframes fadeOut{
+    0%,50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
